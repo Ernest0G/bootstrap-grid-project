@@ -1,0 +1,214 @@
+:root {
+    --off-white: #FFFFFF;
+    --light-gray: #E3E3E3;
+    --medium-gray: #A7A7A7;
+    --dark-gray: #2D2D2D;
+    --soft-pink: #FF9E9D;
+    --background: #454545;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+
+}
+
+body {
+    min-width: 200px !important;
+    min-height: 600px !important;
+    height: 100%;
+}
+
+#main-container {
+    height: 100vh;
+    color: var(--light-gray);
+}
+
+/* Nav Panel */
+#nav-container {
+    background-color: var(--dark-gray);
+    text-align: center;
+}
+
+#nav-container h1 {
+    margin-top: 5%;
+}
+
+#nav-col ul,
+#nav-col li {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-position: inside;
+}
+
+.nav-item {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: var(--medium-gray);
+}
+
+/* Chat gpt helped to design this button */
+#compose-button {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border-color: var(--off-white);
+    color: var(--off-white);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#compose-button:hover {
+    background-color: var(--off-white);
+    color: var(--dark-gray);
+}
+
+
+/* Email Section */
+#right-col {
+    background-color: var(--background);
+    margin: 0 !important;
+}
+
+/* Top Bar */
+
+#top-bar-row {
+    height: 10%;
+}
+
+#top-bar {
+    background-color: var(--dark-gray);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bar-item {
+    text-align: center;
+    align-self: center;
+}
+
+#menu-col {
+    text-align: left;
+}
+
+#user-col {
+    text-align: right;
+}
+
+#menu-icon {
+    font-size: 3rem;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+#search-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid var(--off-white);
+    border-radius: 5px;
+}
+
+#search-bar {
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--dark-gray);
+    color: var(--off-white);
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+#search-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#user-icon {
+    font-size: 3rem;
+    margin-right: 1%;
+}
+
+/* EMAILS */
+#emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.email {
+    width: 85%;
+    height: 75px;
+    display: inline-block;
+
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--dark-gray);
+
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.email:hover {
+    cursor: pointer;
+    color: var(--medium-gray);
+}
+
+.email-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+.email-subject {
+    font-size: 1rem;
+    text-align: start;
+}
+
+.email-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.email-date {
+    font-size: 1rem;
+    text-align: end;
+}
+
+.text-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
