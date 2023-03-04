@@ -8,7 +8,7 @@ let emailDetails = [
     {
         from: 'Lisa Chen',
         subject: 'New Product Launch Announcement',
-        message: `Hello everyone,I'm excited to announce the launch`,
+        message: `Hello everyone, I'm excited to announce the launch`,
         date: '10:46am'
     },
     {
@@ -64,10 +64,10 @@ const displayEmails = () => {
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-10 col-md-9 text-overflow  email-subject">
+            <div class="col-lg-9 col-md-9 col-sm-9 col text-overflow email-subject">
             ${email.subject} - ${email.message}
             </div>
-            <div class="col-lg-2 col-md-3 text-overflow email-icons">
+            <div class="col-lg-3 col-md-3 col-sm-3 col email-icons">
                 <span class="material-symbols-outlined">
                 inventory_2
                 </span>

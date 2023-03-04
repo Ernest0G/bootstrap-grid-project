@@ -65,7 +65,43 @@
                     <!-- Using JS to place emails for cleaner reading -->
                 </div>
                 <!-- Compose Email -->
-                <div class=" d-none d-lg-block col-lg-6">COMPOSE EMAIL</div>
+                <div class=" d-none d-lg-block col-lg-6" id="compose">
+                    <div class="row">
+                        <label for="to">To:</label>
+                        <input type="text" class="compose-input" name="to" />
+                        <label for="subject">Subject:</label>
+                        <input type="text" class="compose-input" name="subject" />
+                        <label for="message">Message:</label>
+                        <textarea class="compose-input" name="message" id="message-input"> </textarea>
+                    </div>
+                    <div class="col" id="message-options">
+                        <button id="send-button">Send Mail</button>
+                        <span class="material-symbols-outlined">
+                            border_color
+                        </span>
+                        <span class="material-symbols-outlined">
+                            attach_file
+                        </span>
+                        <span class="material-symbols-outlined">
+                            attachment
+                        </span>
+                        <span class="material-symbols-outlined">
+                            image
+                        </span>
+                        <span class="material-symbols-outlined">
+                            link
+                        </span>
+                        <span class="material-symbols-outlined">
+                            signature
+                        </span>
+                        <span class="material-symbols-outlined">
+                            more_vert
+                        </span>
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
 
