@@ -1,4 +1,4 @@
-let emailDetails = [
+const emailDetails = [
     {
         from: 'LinkedIn',
         subject: 'New connection request',
@@ -46,8 +46,27 @@ let emailDetails = [
         subject: 'Invitation to Charity Event',
         message: `Hello everyone, I would like to invite you to attend`,
         date: 'January 29, 2023'
+    },
+    {
+        from: 'Daniel Kim',
+        subject: 'Invitation to Charity Event',
+        message: `Hello everyone, I would like to invite you to attend`,
+        date: 'January 29, 2023'
     }
 ];
+const menuButton = document.getElementById('menu-icon');
+const navPanel = document.getElementById('nav-container');
+const closeIcon = document.getElementById('close-icon')
+
+menuButton.addEventListener('click', () => {
+    navPanel.classList.toggle('show');
+    closeIcon.classList.toggle('show');
+})
+
+closeIcon.addEventListener('click', () => {
+    navPanel.classList.toggle('show');
+    closeIcon.classList.toggle('show');
+})
 
 const displayEmails = () => {
     let emailDiv = document.getElementById('emails');
