@@ -68,7 +68,7 @@ closeIcon.addEventListener('click', () => {
     closeIcon.classList.toggle('show');
 })
 
-const displayEmails = () => {
+function displayEmails() {
     let emailDiv = document.getElementById('emails');
 
     for (email of emailDetails) {
