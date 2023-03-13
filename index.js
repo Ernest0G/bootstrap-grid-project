@@ -105,4 +105,6 @@ function displayEmails() {
     }
 };
 
-displayEmails();
+function openEmail() {
+
+};
