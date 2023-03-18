@@ -238,9 +238,11 @@ body {
     text-align: start;
 }
 
-.email-subject {
+.email-content {
     font-size: 1rem;
     text-align: start;
+    display: flex;
+    flex-direction: row;
 }
 
 .email-icons {
@@ -267,7 +269,7 @@ body {
 }
 
 .compose-input {
-    width: 109%;
+    width: 100%;
     border: 2px solid var(--light-gray);
     border-radius: 5px;
     text-align: left;
@@ -297,4 +299,39 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+}
+
+/* OPENED EMAIL */
+#opened-email {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#opened-email-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#opened-email.show {
+    display: block !important;
+    transition: all 0.1s ease-in-out;
+}
+
+#opened-message {
+    height: 100px;
+    overflow-y: auto;
+    background-color: var(--dark-gray);
+    padding: 1%;
+}
+
+#opened-reply {
+    height: 150px;
+}
+
+#close-opened-email {
+    align-self: center;
+    cursor: pointer;
+    font-size: 3rem;
 }

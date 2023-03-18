@@ -67,11 +67,23 @@
                         </span>
                     </div>
                 </div>
-
             </div>
 
             <!-- Right Column -->
             <div class="row" id="email-row">
+                <!-- OPENED EMAIL -->
+                <div class="d-none" id="opened-email">
+                    <div id="opened-email-header">
+                        <span class="material-symbols-outlined" id="close-opened-email">close</span>
+                    </div>
+                    <h1 id="opened-sender">Sender</h1>
+                    <h3 id="opened-subject">Subject</h3>
+                    <p id="opened-message">Message</p>
+                    <h6 id="opened-date">Date</h6>
+                    <textarea class="compose-input" id="opened-reply"> </textarea>
+                    <button id="send-button">Send Reply</button>
+                </div>
+
                 <!-- Email List -->
                 <div class="col-lg-6 col-md-12 col-sm-12" id="emails">
                     <!-- Using JS to place emails for cleaner reading -->
